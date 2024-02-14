@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/ice/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/blackiron/config/common_full_phone.mk)
 
 # Environment Flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -22,7 +22,7 @@ TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 #Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_ice
+PRODUCT_NAME := blackiron_ice
 PRODUCT_DEVICE := ice
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -40,13 +40,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := realme/RMX3461/RE54BFL1:13/TP1A.220905.001/R.1119f23-59b8-59b9:user/release-keys
 
-# Matrixx
-MATRIXX_BUILD_TYPE :=
-MATRIXX_MAINTAINER :=
-MATRIXX_CHIPSET := SM7325
-MATRIXX_BATTERY := 4500mAh
-MATRIXX_DISPLAY := 1080x2412
-WITH_GMS := 
-BUILD_GOOGLE_CONTACTS := 
-BUILD_GOOGLE_DIALER := 
-BUILD_GOOGLE_MESSAGE := 
