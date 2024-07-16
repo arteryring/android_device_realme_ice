@@ -29,7 +29,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
 SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL := INCLUDE_DIR
 SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := \
-    $(DEVICE_PATH)/touch/include
+    $(DEVICE_PATH)/configs/touch/include
 
 # Include the proprietary files BoardConfig.
 include vendor/realme/ice/BoardConfigVendor.mk
